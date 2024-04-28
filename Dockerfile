@@ -7,8 +7,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copy the WAR file to the Tomcat webapps directory
 COPY target/simplewebapp-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/simplewebapp.war
 
-# Expose port 8080 to the outside world
-EXPOSE 8085
+EXPOSE 8001
 
 # Start Tomcat when the container launches
 CMD ["catalina.sh", "run"]
